@@ -1,8 +1,3 @@
-@import url("./constants.styles.css"); 
-main {
-    margin-left: var(--nav-space);
-}
-
 * {
     margin: 0;
     padding: 0;
