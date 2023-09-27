@@ -11,7 +11,11 @@ module.exports = {
       path: path.resolve(__dirname, 'dist'),
       filename: 'index_bundle.js',
       publicPath: '/',
-      clean: true,
+      clean: {
+        keep(asset) {
+          return asset.includes('_redirects');
+        }
+      },
     },
     module: {
       rules: [{
